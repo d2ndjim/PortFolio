@@ -1,11 +1,17 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  box-sizing: border-box;
 }
 
 header {
   position: sticky;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .menu {
@@ -58,4 +64,151 @@ button {
 .background {
   width: 100%;
   margin-top: 20px;
+}
+
+.collaboration:hover {
+  color: rgba(26, 34, 54, 1);
+  background-color: white;
+  border: 2px solid rgba(26, 34, 54, 1);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.works > h1 {
+  font-size: 50px;
+  padding: 40px 0 32px 16px;
+  font-weight: 200;
+  line-height: 50px;
+}
+
+.works > img {
+  width: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a2236;
+  margin: 0;
+}
+
+.wrapper > h2 {
+  color: white;
+  background-color: #1a2236;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 70px;
+  margin-top: -5px;
+  padding-left: 16px;
+}
+
+.btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 0.5em;
+  padding: 20px 60px 0 0;
+  margin-left: 15px;
+  background-color: #1a2236;
+}
+
+.item {
+  background-color: #98dede;
+  border-radius: 3px;
+  border: none;
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-top: -20px;
+}
+
+.item:hover {
+  color: #054242;
+  background-color: #fff;
+  border: 2px solid #1a2236;
+}
+
+.project {
+  margin: 20px 16px;
+  background-color: #1a2236;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 60%;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.seeproject:hover {
+  color: #1a2236;
+  background-color: white;
+}
+
+.about {
+  padding-left: 16px;
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about > h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 70px;
+}
+
+.about > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.about > img {
+  width: 94%;
+  margin-top: 40px;
+}
+
+.div-languages-container {
+  position: relative;
+}
+
+.div-languages-container > img {
+  width: 100%;
+  padding: 20px 15px 0 0;
+  margin-top: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.div-languages-container > h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 60px;
+  z-index: 2;
+  top: 90px;
+  left: 40px;
+  position: absolute;
+  color: white;
+}
+
+ul {
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  margin-left: 40px;
+  font-weight: 500;
+  top: 150px;
+  left: 40px;
+  position: absolute;
+  z-index: 2;
+}
+
+li {
+  color: white;
 }
