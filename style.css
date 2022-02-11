@@ -76,7 +76,6 @@ button {
   text-align: center;
   width: 97%;
   border: none;
-  border-radius: 10px;
 }
 
 .background {
@@ -136,7 +135,6 @@ button {
 
 .item {
   background-color: #98dede;
-  border-radius: 3px;
   border: none;
   font-size: 10px;
   line-height: 20px;
