@@ -45,6 +45,21 @@ p {
   margin-bottom: 40px;
 }
 
+ul {
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  margin-left: 40px;
+  font-weight: 500;
+  top: 150px;
+  left: 40px;
+  position: absolute;
+  z-index: 2;
+}
+
+li {
+  color: white;
+}
+
 .main {
   padding: 104px 16px 16px 16px;
 }
@@ -189,14 +204,6 @@ button {
   position: relative;
 }
 
-.technicals > img {
-  width: 100%;
-  padding: 20px 15px 0 0;
-  margin-top: 20px;
-  z-index: 1;
-  position: relative;
-}
-
 .technicals > h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
@@ -209,19 +216,12 @@ button {
   color: white;
 }
 
-ul {
-  font-size: 17px;
-  font-family: "Poppins", sans-serif;
-  margin-left: 40px;
-  font-weight: 500;
-  top: 150px;
-  left: 40px;
-  position: absolute;
-  z-index: 2;
-}
-
-li {
-  color: white;
+.technicals > img {
+  width: 100%;
+  padding: 20px 15px 0 0;
+  margin-top: 20px;
+  z-index: 1;
+  position: relative;
 }
 
 .get-cv {
