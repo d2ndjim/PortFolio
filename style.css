@@ -14,9 +14,9 @@ header {
   position: sticky;
 }
 
-h1 {
+.main > h1 {
   font-family: "Playfair Display", serif;
-  font-weight: 400;
+  font-weight: 900;
   font-size: 40px;
   line-height: 50px;
   color: rgba(26, 34, 54, 1);
@@ -35,14 +35,15 @@ h1 {
   width: 111px;
 }
 
-p {
+.main > p {
   margin-top: 20px;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
   color: rgba(26, 34, 54, 1);
   margin-bottom: 40px;
+  padding-right: 20px;
 }
 
 ul {
@@ -58,6 +59,8 @@ ul {
 
 li {
   color: white;
+  margin-bottom: 12px;
+  margin-top: 5px;
 }
 
 .main {
@@ -71,7 +74,6 @@ button {
   font-weight: 500;
   line-height: 24px;
   text-align: center;
-  height: 40px;
   width: 97%;
   border: none;
   border-radius: 10px;
@@ -79,6 +81,7 @@ button {
 
 .background {
   width: 100%;
+  margin-top: 35px;
 }
 
 .container {
@@ -139,6 +142,7 @@ button {
   line-height: 20px;
   font-weight: 500;
   margin-top: -20px;
+  color: #000;
 }
 
 .item:hover {
@@ -155,12 +159,16 @@ button {
   border-radius: 5px;
   width: 60%;
   padding: 15px;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .project:hover {
   color: #1a2236;
   background-color: white;
+}
+
+i {
+  margin-left: 13px;
 }
 
 .about {
@@ -179,9 +187,10 @@ button {
 
 .about > p {
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 25px;
+  padding-right: 20px;
 }
 
 .about > img {
@@ -214,9 +223,8 @@ button {
 }
 
 .get-cv {
-  background-color: rgba(26, 34, 54, 1);
   color: white;
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 500;
   line-height: 24px;
   text-align: center;
@@ -224,6 +232,7 @@ button {
   width: 97%;
   border-radius: 10px;
   border: none;
+  align-items: center;
 }
 
 .get-cv:hover {
