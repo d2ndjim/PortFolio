@@ -64,9 +64,6 @@ li {
   padding: 104px 16px 16px 16px;
 }
 
-
-
-
 button {
   background-color: rgba(26, 34, 54, 1);
   color: white;
@@ -80,16 +77,8 @@ button {
   border-radius: 10px;
 }
 
-
 .background {
   width: 100%;
-
-}
-
-.get-cv:hover {
-  color: rgba(26, 34, 54, 1);
-  background-color: white;
-  border: 2px solid rgba(26, 34, 54, 1);
 }
 
 .container {
@@ -235,4 +224,10 @@ button {
   width: 97%;
   border-radius: 10px;
   border: none;
+}
+
+.get-cv:hover {
+  color: rgba(26, 34, 54, 1);
+  background-color: white;
+  border: 2px solid rgba(26, 34, 54, 1);
 }
