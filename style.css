@@ -4,14 +4,22 @@
   box-sizing: border-box;
 }
 
-header {
-  position: sticky;
-}
-
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  color: rgba(26, 34, 54, 1);
 }
 
 .menu {
@@ -27,18 +35,6 @@ body {
   width: 111px;
 }
 
-.main {
-  padding: 104px 16px 16px 16px;
-}
-
-h1 {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 50px;
-  color: rgba(26, 34, 54, 1);
-}
-
 p {
   margin-top: 20px;
   font-family: "Poppins", sans-serif;
@@ -49,6 +45,13 @@ p {
   margin-bottom: 40px;
 }
 
+.main {
+  padding: 104px 16px 16px 16px;
+}
+
+
+
+
 button {
   background-color: rgba(26, 34, 54, 1);
   color: white;
@@ -56,10 +59,12 @@ button {
   font-weight: 500;
   line-height: 24px;
   text-align: center;
-  height: 50px;
-  width: 288px;
+  height: 40px;
+  width: 97%;
   border: none;
+  border-radius: 10px;
 }
+
 
 .background {
   width: 100%;
@@ -75,6 +80,12 @@ button {
 .container {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.button:hover {
+  color: rgba(26, 34, 54, 1);
+  background-color: white;
+  border: 2px solid rgba(26, 34, 54, 1);
 }
 
 .layout-2 > h1 {
@@ -107,7 +118,7 @@ button {
   padding-left: 16px;
 }
 
-.btn {
+.tech-button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 0.5em;
