@@ -238,3 +238,27 @@ i {
   background-color: white;
   border: 2px solid rgba(26, 34, 54, 1);
 }
+
+.contact-form {
+  padding: 104px 16px 16px 16px;
+}
+
+.contact-form > h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 50px;
+  color: rgba(26, 34, 54, 1);
+  padding-top: 80px;
+}
+
+.contact-form > p {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgba(26, 34, 54, 1);
+  margin-bottom: 40px;
+  padding-right: 20px;
+}
