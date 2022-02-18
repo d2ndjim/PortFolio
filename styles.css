@@ -339,12 +339,6 @@
     margin-bottom: 12vw;
   }
 
-  .dark-bg:not(:hover, :focus, :active, :focus-visible, :focus-within)
-    .project {
-    visibility: hidden;
-    animation: mymove 0.5s;
-  }
-
   .project1,
   .project2,
   .project3,
@@ -437,7 +431,6 @@
   }
 
   .project {
-    /* display: none; */
     position: absolute;
     bottom: 0;
     left: 0;
@@ -450,7 +443,12 @@
     flex-direction: column;
     padding: 40px 0 40px 40px;
   }
-     
+
+  .dark-bg:not(:hover, :focus, :active, :focus-visible, :focus-within) .project {
+    visibility: hidden;
+    animation: mymove 0.5s;
+  }
+
   article.dark-bg div button {
     margin: 0;
   }
@@ -564,7 +562,6 @@
   }
 
   .buttons-primary-white {
-    /* display: none; */
     display: flex;
     background-color: #fff;
     color: #1a2236;
@@ -574,15 +571,12 @@
   }
 
   .heading2 {
-    /* display: none; */
     font-weight: bold;
     font-size: 60px;
     line-height: 80%;
-
   }
 
   .languages {
-    /* display: none; */
     background-color: #98dede;
     padding: 2px 10px;
     color: #1a2236;
