@@ -10,6 +10,10 @@
     display: none;
   }
 
+  .project-card-desktop {
+    display: none;
+  }
+
   .menu-drawer-height {
     height: 100vh;
   }
@@ -244,6 +248,10 @@
 }
 
 @media only screen and (min-width: 993px) {
+  .mobile-img {
+    display: none;
+  }
+
   .nav-list {
     display: flex;
     align-items: center;
@@ -333,11 +341,11 @@
     padding: 0 1vw;
   }
 
-  .works {
+  /* .works {
     position: relative;
     height: 113vw;
     margin-bottom: 12vw;
-  }
+  } */
 
   .project1,
   .project2,
@@ -430,8 +438,164 @@
     margin-left: 10vw;
   }
 
+  /* start of additional code for desktop */
+  .works {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background:
+      url("images/image_dots-smaller.svg"),
+      url("images/image-geometry_2.svg"),
+      url("images/Group1.svg"),
+      url("images/Rectangle21\(1\).png"),
+      url("images/Rectangle27.svg"),
+      url("images/image-geometry_5.svg"),
+      url("images/image-geometry_4.svg"),
+      url("images/Rectangle47.svg"),
+      url("images/Group2.svg");
+    background-position:
+      top 0 left 25%,
+      right 58.5% top 27%,
+      right 0 top 52.5%,
+      left 0 top 35.5%,
+      left 0 top 54.5%,
+      left 0 top 69%,
+      left 48% top 67.5%,
+      right 14% top 76.5%,
+      right 39.5% top 59.5%;
+    background-repeat: no-repeat;
+  }
+
+  .project-card-desktop {
+    height: 1643px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 52px;
+  }
+
+  .desktop-project-1 {
+    background: url("images/Rectangle21.svg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .d-p-1-details {
+    padding: 20px 0 20px 45px;
+    color: #fff;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(0deg, rgba(26, 34, 54, 0.95), rgba(26, 34, 54, 0.95));
+    backdrop-filter: blur(24px);
+  }
+
+  .d-p-1-details h4 {
+    width: 80%;
+    height: 48px;
+    font-style: normal;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 80%;
+  }
+
+  .d-p-1-details a {
+    background: #fff;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 27px;
+    padding: 8px 10px;
+    width: fit-content;
+    color: #1a2236;
+  }
+
+  .d-p-1-details ul {
+    display: flex;
+    column-gap: 20px;
+    font-style: normal;
+    line-height: 80%;
+    color: #1a2236;
+    margin-bottom: 50px;
+  }
+
+  .d-p-1-details li {
+    padding: 10px 12px;
+    width: fit-content;
+    font-weight: 300;
+    font-size: 20px;
+    background: #98dede;
+  }
+
+  .d-p-1-details i {
+    margin-left: 15px;
+  }
+
+  .desktop-project-2 {
+    height: 338px;
+    align-self: flex-end;
+    width: 50%;
+  }
+
+  .d-p-2-details {
+    padding: 10px 8px 10px 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: linear-gradient(0deg, rgba(26, 34, 54, 0.95), rgba(26, 34, 54, 0.95));
+    backdrop-filter: blur(24px);
+    height: 150px;
+  }
+
+  .d-p-2-details h4 {
+    height: 32px;
+    font-style: normal;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 80%;
+  }
+
+  .d-p-2-details a {
+    background: #fff;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 20px;
+    padding: 6px 8px;
+    width: fit-content;
+    color: #1a2236;
+  }
+
+  .d-p-2-details ul {
+    display: flex;
+    column-gap: 10px;
+    font-style: normal;
+    line-height: 80%;
+    color: #1a2236;
+  }
+
+  .d-p-2-details li {
+    padding: 4px 8px;
+    width: fit-content;
+    font-weight: 300;
+    font-size: 16px;
+    background: #98dede;
+  }
+
+  /* end of addtional code for desktop */
   .project {
-    position: absolute;
+    display: none;
+
+    /* position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -441,13 +605,13 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 40px 0 40px 40px;
+    padding: 40px 0 40px 40px; */
   }
 
-  .dark-bg:not(:hover, :focus, :active, :focus-visible, :focus-within) .project {
+  /* .dark-bg:not(:hover, :focus, :active, :focus-visible, :focus-within) .project {
     visibility: hidden;
     animation: mymove 0.5s;
-  }
+  } */
 
   article.dark-bg div button {
     margin: 0;
@@ -562,25 +726,31 @@
   }
 
   .buttons-primary-white {
-    display: flex;
+    display: none;
+
+    /* display: flex;
     background-color: #fff;
     color: #1a2236;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 170px; */
   }
 
   .heading2 {
-    font-weight: bold;
+    display: none;
+
+    /* font-weight: bold;
     font-size: 60px;
-    line-height: 80%;
+    line-height: 80%; */
   }
 
   .languages {
-    background-color: #98dede;
+    display: none;
+
+    /* background-color: #98dede;
     padding: 2px 10px;
     color: #1a2236;
-    font-weight: bold;
+    font-weight: bold; */
   }
 
   footer {
