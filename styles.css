@@ -987,6 +987,21 @@ section.intro-section article.white-bg {
   animation: left-right 1s ease-in-out;
 }
 
+@keyframes left-right {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+section.intro-section .page-brk-dp {
+  animation: right-left 1s ease-in-out;
+}
+
+
 article.dark-bg:hover div.project {
   display: flex;
 }
