@@ -1001,7 +1001,6 @@ section.intro-section .page-brk-dp {
   animation: right-left 1s ease-in-out;
 }
 
-
 article.dark-bg:hover div.project {
   display: flex;
 }
