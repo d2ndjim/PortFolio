@@ -596,6 +596,20 @@
   }
 
   /* end of addtional code for desktop */
+
+  /* start of animation */
+
+  /* .name-tran {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-right: 100%;
+      width: 100%;
+    } */
+
   .project {
     display: none;
   }
@@ -981,10 +995,6 @@ footer h2 {
 
 ul {
   list-style: none;
-}
-
-section.intro-section article.white-bg {
-  animation: left-right 1s ease-in-out;
 }
 
 article.dark-bg:hover div.project {
