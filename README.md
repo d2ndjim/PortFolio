@@ -11,9 +11,6 @@
 - FlexBox
 - CSS
 
-## Live Demo
-- You can access a live version of my portfolio by clicking [here](https://d2ndjim.github.io/PortFolio)
-
 ## Authors
 
 👤 **Author1**
