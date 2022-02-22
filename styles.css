@@ -1004,3 +1004,7 @@ section.intro-section .page-brk-dp {
 article.dark-bg:hover div.project {
   display: flex;
 }
+
+button:focus {
+  border: 3px solid #e24e5b;
+}
