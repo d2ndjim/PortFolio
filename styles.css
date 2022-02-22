@@ -1008,3 +1008,7 @@ article.dark-bg:hover div.project {
 button:focus {
   border: 3px solid #e24e5b;
 }
+
+footer img[alt] {
+  color: #fff;
+}
