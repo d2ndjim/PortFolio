@@ -10,12 +10,15 @@
 - HTML
 - CSS
 
+## Getting Started
+> 
+
 ## Live Demo
 - You can access a live version of my portfolio by clicking [here](https://d2ndjim.github.io/PortFolio)
 
 ## Authors
 
-👤 **Author1**
+👤 **Lekan Jimoh**
 
 - GitHub: [@d2ndjim](https://github.com/d2ndjim)
 - Twitter: [@d2ndjim_](https://twitter.com/@d2ndjim_)
