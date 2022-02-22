@@ -10,6 +10,18 @@
 - HTML
 - CSS
 
+## Getting Started
+> To get a local copy, follow the following steps
+
+Prerequisites
+- VS code 
+- Git Bash
+
+Setup
+- Git clone `https://github.com/d2ndjim/PortFolio.git`
+
+
+
 ## Live Demo
 - You can access a live version of my portfolio by clicking [here](https://d2ndjim.github.io/PortFolio)
 
