@@ -11,44 +11,50 @@
   }
 
   .overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-image: url("/images/image_geometry_menu_1.svg"), url("/images/image_geometry_menu_2.svg");
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    background-size: 85%, 100%;
   }
 
   .overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
   }
 
   .overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
   }
 
-  .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
   }
 
   .overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
   }
 
   .project-card-desktop {
@@ -161,7 +167,7 @@
     display: none;
   }
 
-  .drawer-menu-items li a {
+  /* .drawer-menu-items li a {
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -169,11 +175,11 @@
     font-size: 16px;
     line-height: 300%;
     color: #1a2236;
-  }
+  } */
 
-  .drawer-menu-items li a:focus {
+  /* .drawer-menu-items li a:focus {
     text-decoration: underline;
-  }
+  } */
 
   .heading2 {
     font-weight: 300;
@@ -295,6 +301,10 @@
 
 @media only screen and (min-width: 993px) {
   .mobile-img {
+    display: none;
+  }
+
+  .overlay {
     display: none;
   }
 
@@ -489,26 +499,14 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background:
-      url("images/image_dots-smaller.svg"),
-      url("images/image-geometry_2.svg"),
-      url("images/Group1.svg"),
-      url("images/Rectangle21\(1\).png"),
-      url("images/Rectangle27.svg"),
-      url("images/image-geometry_5.svg"),
-      url("images/image-geometry_4.svg"),
-      url("images/Rectangle47.svg"),
-      url("images/Group2.svg");
-    background-position:
-      top 0 left 25%,
-      right 58.5% top 27%,
-      right 0 top 52.5%,
-      left 0 top 35.5%,
-      left 0 top 54.5%,
-      left 0 top 69%,
-      left 48% top 67.5%,
-      right 14% top 76.5%,
-      right 39.5% top 59.5%;
+    background: url("images/image_dots-smaller.svg"),
+      url("images/image-geometry_2.svg"), url("images/Group1.svg"),
+      url("images/Rectangle21\(1\).png"), url("images/Rectangle27.svg"),
+      url("images/image-geometry_5.svg"), url("images/image-geometry_4.svg"),
+      url("images/Rectangle47.svg"), url("images/Group2.svg");
+    background-position: top 0 left 25%, right 58.5% top 27%, right 0 top 52.5%,
+      left 0 top 35.5%, left 0 top 54.5%, left 0 top 69%, left 48% top 67.5%,
+      right 14% top 76.5%, right 39.5% top 59.5%;
     background-repeat: no-repeat;
   }
 
@@ -538,7 +536,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: linear-gradient(0deg, rgba(26, 34, 54, 0.95), rgba(26, 34, 54, 0.95));
+    background: linear-gradient(
+      0deg,
+      rgba(26, 34, 54, 0.95),
+      rgba(26, 34, 54, 0.95)
+    );
     backdrop-filter: blur(24px);
   }
 
@@ -596,7 +598,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background: linear-gradient(0deg, rgba(26, 34, 54, 0.95), rgba(26, 34, 54, 0.95));
+    background: linear-gradient(
+      0deg,
+      rgba(26, 34, 54, 0.95),
+      rgba(26, 34, 54, 0.95)
+    );
     backdrop-filter: blur(24px);
     height: 150px;
   }
