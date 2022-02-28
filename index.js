@@ -1,7 +1,7 @@
 function openNav() {
-  document.getElementById("mobile-nav").style.height = "100%"
+  document.querySelector("#myNav").style.width = "100%"
 }
 
 function closeNav() {
-  document.getElementById("mobile-nav").style.height = "0%"
+  document.querySelector("#myNav").style.width = "0%"
 }
