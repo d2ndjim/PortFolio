@@ -20,7 +20,7 @@
     background-color: #fff;
     overflow-x: hidden;
     transition: 0.5s;
-    background-image: url("/images/image_geometry_menu_1.svg"), url("/images/image_geometry_menu_2.svg");
+    background-image: url("images/image_geometry_menu_1.svg"), url("images/image_geometry_menu_2.svg");
     background-position: left top, right bottom;
     background-repeat: no-repeat;
     background-size: 85%, 100%;
