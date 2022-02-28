@@ -1,7 +1,10 @@
 function openNav() {
-  document.querySelector("#myNav").style.width = "100%"
+  document.querySelector('#myNav').style.width = '100%';
 }
 
 function closeNav() {
-  document.querySelector("#myNav").style.width = "0%"
+  document.querySelector('#myNav').style.width = '0%';
 }
+
+openNav();
+closeNav();
