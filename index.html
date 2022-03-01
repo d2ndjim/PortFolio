@@ -20,13 +20,14 @@
     gtag('js', new Date());
     gtag('config', 'G-GBGJJP4X42');
   </script>
+  <script src="index.js" ></script>
 </head>
 
 <body>
   <header>
     <nav class="navbar ">
       <img class="icon" src="images/image_geometry_1.svg" alt="" />
-      <button class="nav-btn"></button>
+      <button class="nav-btn" onclick="openNav()"></button>
       <ul class="nav-list">
         <li><a href="#hello"> Hello</a></li>
         <li><a href="#projects"> Portfolio</a></li>
@@ -35,19 +36,17 @@
       </ul>
     </nav>
 
-    <nav class="open-nav disappear">
-      <div class="drawer-image"></div>
-      <div class="drawer-image-1"></div>
-      <div class="drawer-image-2"></div>
-      <div class="drawer-image-3"></div>
-      <button class="close-drawer-btn"> </button>
-      <ul class="drawer-menu-items">
-        <li><a href="#hello"> Hello</a></li>
-        <li><a href="#projects"> Portfolio</a></li>
-        <li><a href="#about"> About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#hello"   onclick="closeNav()">Hello</a>
+          <a href="#projects" onclick="closeNav()">Portfolio</a>
+          <a href="#about" onclick="closeNav()">About</a>
+          <a href="#contact" onclick="closeNav()">Contact</a>
+        </div>
+      </div>
+
   </header>
   <main>
     <section class="intro-section" id="hello">
