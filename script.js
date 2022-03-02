@@ -32,8 +32,7 @@ for (let i = 1; i <= 6; i += 1) {
 const projectPopUp = document.createElement('div'); // Create popup div
 projectPopUp.className = 'show-popup';
 projectPopUp.innerHTML = `
-<div class="popUpTop"><img class="close-project" src="images/times.svg" alt="Close project icon"></div>
-`;
+<div class="popUpTop"><img class="close-project" src="images/times.svg" alt="Close project icon"></div>`;
 
 const projectDescription = document.createElement('p');
 projectDescription.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.';
@@ -241,9 +240,9 @@ function displayProject(num) {
   document.head.appendChild(style);
   function closePopup() {
     projectPopUp.style.top = '-100%';
-    document.querySelector('.show-popup > .popUpTop').removeChild(document.querySelector('.popUpTop h2'));
     document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .technologies'));
     document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .thumbnail'));
+    document.querySelector('.show-popup > .popUpTop').removeChild(document.querySelector('.popUpTop > h2'));
   }
   const closeProject = document.querySelectorAll('.close-project');
   closeProject.forEach((item) => {
