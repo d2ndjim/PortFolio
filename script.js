@@ -114,23 +114,23 @@ style.innerHTML = `
     }
 
     .show-popup .two {
-        background-image: url(../images/project_thumbnail_2.svg);
+        background-image: url(images/project_thumbnail_2.svg);
     }
 
     .show-popup .three {
-        background-image: url(../images/project_thumbnail_3.svg);
+        background-image: url(images/project_thumbnail_3.svg);
     }
 
     .show-popup .four {
-        background-image: url(../images/project_thumbnail_4.svg);
+        background-image: url(images/project_thumbnail_4.svg);
     }
 
     .show-popup .five {
-        background-image: url(../images/project_thumbnail_5.svg);
+        background-image: url(images/project_thumbnail_5.svg);
     }
 
     .show-popup .six {
-        background-image: url(../images/project_thumbnail_6.svg);
+        background-image: url(images/project_thumbnail_6.svg);
     }
 
     .show-popup p {
@@ -251,4 +251,4 @@ function displayProject(num) {
   });
 }
 
-displayProject();
+// displayProject();
