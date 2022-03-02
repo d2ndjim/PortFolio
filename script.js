@@ -251,3 +251,8 @@ function displayProject(num) {
 }
 
 // displayProject();
+
+const btnProjects = document.querySelector('.see-project');
+btnProjects.forEach((item) => {
+  item.addEventListener('click', displayProject);
+});
