@@ -34,10 +34,10 @@ header {
 }
 
 .navbar li :hover {
-    padding-bottom: 2px;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-  } 
+  padding-bottom: 2px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
 
 .headline {
   background-image: none;

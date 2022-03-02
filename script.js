@@ -1,3 +1,24 @@
+// Menu DOM
+const menu = document.querySelector('.menu');
+const open = document.querySelector('.open');
+const close = document.querySelector('li.close');
+const sectionLinks = document.querySelectorAll('.menu-link');
+
+function showNav() {
+  menu.style.top = '0';
+}
+
+function hideNav() {
+  menu.style.top = '-100%';
+}
+
+open.addEventListener('click', showNav);
+close.addEventListener('click', hideNav);
+sectionLinks.forEach((item) => {
+  item.addEventListener('click', hideNav);
+});
+
+// Modal DOM
 const projects = document.querySelectorAll('.projects > div'); // one, two, three
 
 const projectList = []; // Extract info to recycle
@@ -20,10 +41,10 @@ projectDescription.textContent = 'Lorem ipsum dolor sit amet, consectetur adipis
 const projectSeeLiveSource = document.createElement('div');
 projectSeeLiveSource.className = 'projectSee';
 projectSeeLiveSource.innerHTML = `
-<button class="see-live close-project" type="button" onclick="window.location.href='https://eduardosancho.github.io/setup_and_mobile_version_skeleton/'">
+<button class="see-live close-project" type="button" onclick="window.location.href='https://d2ndjim.github.io/PortFolio/'">
 <p>See live</p><img src="images/ic_link.svg" alt="download-icon">
 </button>
-<button class="see-source close-project" type="button" onclick="window.location.href='https://github.com/eduardosancho/setup_and_mobile_version_skeleton'">
+<button class="see-source close-project" type="button" onclick="window.location.href='https://github.com/d2ndjim/PortFolio'">
     <p>See source</p><img src="images/ic_github_white.svg" alt="github">
 </button>
 `;
@@ -186,48 +207,48 @@ style.innerHTML = `
     }
     `;
 
-function displayProject(num) {
-  document.body.appendChild(projectPopUp);
-  projectPopUp.style.top = '0';
-  projectPopUp.querySelector('div').appendChild(projectList[num].title.cloneNode(true));
-  projectPopUp.appendChild(projectList[num].technologies.cloneNode(true));
-  projectPopUp.appendChild(projectList[num].thumbnail.cloneNode(true));
-  switch (num) {
-    case 1:
-      // add class two to thumbnail element in popup
-      projectPopUp.querySelector('.thumbnail').classList.add('one');
-      break;
-    case 2:
-      projectPopUp.querySelector('.thumbnail').classList.add('two');
-      break;
-    case 3:
-      projectPopUp.querySelector('.thumbnail').classList.add('three');
-      break;
-    case 4:
-      projectPopUp.querySelector('.thumbnail').classList.add('four');
-      break;
-    case 5:
-      projectPopUp.querySelector('.thumbnail').classList.add('five');
-      break;
-    case 6:
-      projectPopUp.querySelector('.thumbnail').classList.add('six');
-      break;
-    default:
-      break;
-  }
-  projectPopUp.appendChild(projectDescription);
-  projectPopUp.appendChild(projectSeeLiveSource);
-  document.head.appendChild(style);
-  function closePopup() {
-    projectPopUp.style.top = '-100%';
-    document.querySelector('.show-popup > .popUpTop').removeChild(document.querySelector('.popUpTop h2'));
-    document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .technologies'));
-    document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .thumbnail'));
-  }
-  const closeProject = document.querySelectorAll('.close-project');
-  closeProject.forEach((item) => {
-    item.addEventListener('click', closePopup); // Click to close
-  });
-}
+// function displayProject(num) {
+//   document.body.appendChild(projectPopUp);
+//   projectPopUp.style.top = '0';
+//   projectPopUp.querySelector('div').appendChild(projectList[num].title.cloneNode(true));
+//   projectPopUp.appendChild(projectList[num].technologies.cloneNode(true));
+//   projectPopUp.appendChild(projectList[num].thumbnail.cloneNode(true));
+//   switch (num) {
+//     case 1:
+//       // add class two to thumbnail element in popup
+//       projectPopUp.querySelector('.thumbnail').classList.add('one');
+//       break;
+//     case 2:
+//       projectPopUp.querySelector('.thumbnail').classList.add('two');
+//       break;
+//     case 3:
+//       projectPopUp.querySelector('.thumbnail').classList.add('three');
+//       break;
+//     case 4:
+//       projectPopUp.querySelector('.thumbnail').classList.add('four');
+//       break;
+//     case 5:
+//       projectPopUp.querySelector('.thumbnail').classList.add('five');
+//       break;
+//     case 6:
+//       projectPopUp.querySelector('.thumbnail').classList.add('six');
+//       break;
+//     default:
+//       break;
+//   }
+//   projectPopUp.appendChild(projectDescription);
+//   projectPopUp.appendChild(projectSeeLiveSource);
+//   document.head.appendChild(style);
+//   function closePopup() {
+//     projectPopUp.style.top = '-100%';
+//     document.querySelector('.show-popup > .popUpTop').removeChild(document.querySelector('.popUpTop h2'));
+//     document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .technologies'));
+//     document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .thumbnail'));
+//   }
+//   const closeProject = document.querySelectorAll('.close-project');
+//   closeProject.forEach((item) => {
+//     item.addEventListener('click', closePopup); // Click to close
+//   });
+// }
 
-displayProject();
+// displayProject();
