@@ -237,12 +237,15 @@
                         </li>
                         <li id="form-email">
                             <label for="email">Your email</label>
-                            <input type="email" id="email" name="user_email" placeholder="johndoe@email.com" required>
+                            <input type="email" class="emailAddress" id="email" name="user_email" placeholder="johndoe@email.com" required>
                         </li>
                     </ul>
                     <label id="msg-label" for="msg">Message</label>
                     <textarea id="msg" name="message" placeholder="Enter your message here..." maxlength="500"
                         required></textarea>
+                    <div class="validation">
+                        <p class="validationMessage"></p>
+                    </div>
                     <button type="submit" id="submit-form">Start collaboration</button>
                 </form>
             </div>
@@ -277,6 +280,7 @@
         </section>
     </main>
     <script src="script.js"></script>
+    <script src="formValidation.js"></script>
 </body>
 
 </html>

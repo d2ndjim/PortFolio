@@ -2,6 +2,18 @@ body {
   margin: 0;
 }
 
+.validation {
+  width: 100%;
+  text-align: center;
+}
+
+.validationMessage {
+  height: 15%;
+  font-family: 'Poppins', sans-serif;
+  color: #e2505c;
+  font-weight: bold;
+}
+
 header {
   background-image: url(../images/mobile_geometry_1.svg);
   background-repeat: no-repeat;
