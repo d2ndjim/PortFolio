@@ -17,7 +17,16 @@
   list-style: none;
   margin-block-start: 0;
   padding-inline-start: 15vw;
-  transition: top 1.5s ease-out;
+  transition: top 0.8s ease-out;
+}
+
+.navbar a {
+  color: #1a2236;
+}
+
+.navbar li :hover {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
 }
 
 .navbar .menu .close {
