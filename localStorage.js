@@ -10,7 +10,7 @@ Form.addEventListener('input', () => {
   localStorage.setItem('FormContent', JSON.stringify(formInfo));
 });
 
-// const formObj = JSON.parse(localStorage.getItem('FormContent'))
-// document.querySelector('#name').value = formObj.name;
-// document.querySelector('.emailAddress').value = formObj.email;
-// document.querySelector('#msg').value = formObj.message;
+const formObj = JSON.parse(localStorage.getItem('FormContent'));
+document.querySelector('#name').value = formObj.name;
+document.querySelector('.emailAddress').value = formObj.email;
+document.querySelector('#msg').value = formObj.message;
