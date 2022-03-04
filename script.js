@@ -250,7 +250,7 @@ function displayProject(num) {
   });
 }
 
-// displayProject();
+displayProject();
 
 const btnProjects = document.querySelectorAll('.see-project');
 btnProjects.forEach((item) => {
