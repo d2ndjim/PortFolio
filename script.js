@@ -40,10 +40,10 @@ projectDescription.textContent = 'Lorem ipsum dolor sit amet, consectetur adipis
 const projectSeeLiveSource = document.createElement('div');
 projectSeeLiveSource.className = 'projectSee';
 projectSeeLiveSource.innerHTML = `
-<button class="see-live close-project" type="button" onclick="window.location.href='https://d2ndjim.github.io/PortFolio/'">
+<button class="see-live close-project" type="button" onclick="window.location.href='https://d2ndjim.github.io/ToDo-List/'">
 <p>See live</p><img src="images/ic_link.svg" alt="download-icon">
 </button>
-<button class="see-source close-project" type="button" onclick="window.location.href='https://github.com/d2ndjim/PortFolio'">
+<button class="see-source close-project" type="button" onclick="window.location.href='https://github.com/d2ndjim/toDo-List/'">
     <p>See source</p><img src="images/ic_github_white.svg" alt="github">
 </button>
 `;

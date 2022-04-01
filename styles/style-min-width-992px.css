@@ -127,7 +127,7 @@ header {
   grid-row: 1/2;
   grid-column: 4/10;
   overflow: hidden;
-  background-image: url(../images/project_thumbnail_1.svg);
+  background-image: url(../images/todo-List.png);
 }
 
 .two {
